@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Priyadharshini R - Biography</title>
+  <style>
+    /* Professional subtle abstract background */
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: 'Segoe UI', 'Georgia', serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: url('https://t3.ftcdn.net/jpg/03/24/00/84/240_F_324008494_DmfUjeSbO6O1LPH5AC72fhjYEqZikxpo.jpg') no-repeat center center fixed;
+      background-size: cover;
+      position: relative;
+      color: #eaeaea;
+    }
+    /* Dark overlay for readability */
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(20, 20, 25, 0.75);
+      z-index: 0;
+    }
+    /* Bio card styling */
+    .bio-card {
+      position: relative;
+      z-index: 1;
+      background: rgba(24, 24, 29, 0.9);
+      border-radius: 24px;
+      box-shadow: 0 8px 40px rgba(0,0,0,0.45), 0 0 0 4px #ffd16644;
+      padding: 44px 36px 36px 36px;
+      max-width: 420px;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      border: 2px solid #ffd16655;
+      transition: box-shadow 0.3s;
+      color: #eaeaea;
+    }
+    .bio-card:hover {
+      box-shadow: 0 12px 48px #ffd16655, 0 0 0 4px #ffd16688;
+      border-color: #ffd166;
+    }
+    .profile-img {
+      width: 120px;
+      height: 120px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 5px solid #ffd166cc;
+      margin-bottom: 22px;
+      box-shadow: 0 0 24px #ffd16655, 0 2px 16px rgba(0,0,0,0.14);
+      background: #fff;
+      transition: box-shadow 0.3s;
+    }
+    .bio-card:hover .profile-img {
+      box-shadow: 0 0 40px #ffd166cc, 0 2px 24px rgba(0,0,0,0.16);
+    }
+    .name {
+      font-size: 2rem;
+      font-weight: 700;
+      color: #ffd166;
+      margin-bottom: 10px;
+      letter-spacing: 1px;
+      text-align: center;
+      font-family: 'Georgia', serif;
+    }
+    .bio {
+      font-size: 1.08rem;
+      color: #eaeaea;
+      text-align: center;
+      margin-bottom: 26px;
+      line-height: 1.7;
+      font-family: 'Segoe UI', serif;
+    }
+    .contact {
+      color: #bdbdbd;
+      font-size: 1rem;
+      margin-bottom: 18px;
+      text-align: center;
+    }
+    .contact a {
+      color: #ffd166;
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+    .contact a:hover {
+      color: #fff;
+      text-decoration: underline;
+    }
+    .socials {
+      display: flex;
+      gap: 22px;
+      justify-content: center;
+      margin-top: 10px;
+    }
+    .socials a {
+      color: #ffd166;
+      font-size: 1.5rem;
+      background: #23234b;
+      border-radius: 50%;
+      width: 38px;
+      height: 38px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+      box-shadow: 0 2px 8px #ffd16622;
+      border: 2px solid transparent;
+    }
+    .socials a:hover {
+      background: #ffd166;
+      color: #23234b;
+      border-color: #ffd166;
+      box-shadow: 0 0 12px #ffd166bb;
+    }
+    @media (max-width: 500px) {
+      .bio-card {
+        padding: 24px 8px 20px 8px;
+        max-width: 98vw;
+      }
+      .name {
+        font-size: 1.2rem;
+      }
+      .bio {
+        font-size: 0.97rem;
+      }
+    }
+  </style>
+  <!-- Font Awesome for social icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+</head>
+<body>
+  <div class="bio-card">
+    <img class="profile-img" src="profilepic.jpg" alt="Priyadharshini R" />
+    <div class="name">Priyadharshini R</div>
+    <div class="bio">
+      Dynamic web developer specializing in responsive design and cloud computing.<br />
+      Proficient in React and AWS, I create optimized digital solutions and collaborate with teams to deliver high-quality user experiences.
+    </div>
+    <div class="contact">
+      <div><b>Email:</b> <a href="mailto:priya02april2005@gmail.com">priya02april2005@gmail.com</a></div>
+      <div><b>Location:</b> Coimbatore, India</div>
+    </div>
+    <div class="socials">
+      <a href="https://www.linkedin.com/in/priyadharshini-r-0aa1b52a1" target="_blank" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+      <a href="https://github.com/priya242005" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+      <a href="https://www.instagram.com/_._priyadharshini/?hl=en" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+    </div>
+  </div>
+</body>
+</html>
